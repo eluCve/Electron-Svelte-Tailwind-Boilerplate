@@ -6,7 +6,7 @@
   "main": "./electron/index.js",
   "scripts": {
     "build": "npm run build:tailwind && rollup -c",
-    "build:tailwind": "postcss src/app.css -o public/build/bundle.css",
+    "build:tailwind": "postcss src/app.css -o public/build/tailwind.css",
     "start": "sirv public",
     "app": "npm run build && electron ./electron",
     "dist": "electron-builder"
